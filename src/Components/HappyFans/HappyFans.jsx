@@ -63,11 +63,11 @@ const HappyFans = () => {
     }
 
     return (
-        <div className='w-full min-h-[600px] h-full mb-[130px] bg-white'>
+        <div className='w-full min-h-[600px] h-full bg-white'>
             <div className="lg:container mx-auto">
                 <div className="flex items-center justify-center gap-6 flex-col mb-16">
                     <h3 className='text-5xl text-[#0f0200] font-berkshire-heading font-normal capitalize'>hear from our <span className='text-[#f83d8e]'>happy</span> fans</h3>
-                <p className='text-xl text-[#646464] font-archivo font-normal'>Read testimonials from those who have enjoyed our artisan gelato.</p>
+                    <p className='text-xl text-[#646464] font-archivo font-normal'>Read testimonials from those who have enjoyed our artisan gelato.</p>
                 </div>
 
                 <Swiper className='w-full bg-none'

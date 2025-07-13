@@ -5,6 +5,7 @@ import OurGuilt from '../../Components/OurGuilt/OurGuilt';
 import TimeOffer from '../../Components/TimeOffer/TimeOffer';
 import BestIceCream from '../../Components/BestIceCreame/BestIceCream';
 import HappyFans from '../../Components/HappyFans/HappyFans';
+import Newsletter from '../../Components/Newsletter/Newsletter';
 
 const Home = () => {
     return (
@@ -38,6 +39,11 @@ const Home = () => {
             {/* our happy fans component */}
             <div>
                 <HappyFans/>
+            </div>
+
+            {/* our happy fans component */}
+            <div>
+                <Newsletter/>
             </div>
 
         </div>
