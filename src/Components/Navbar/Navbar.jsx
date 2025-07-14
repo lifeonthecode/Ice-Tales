@@ -20,7 +20,7 @@ const Navbar = () => {
     const [activeSearch, setActiveSearch] = useState(false);
 
     return (
-        <div className='w-full bg-white flex items-center justify-center h-[90px]'>
+        <div className='w-full bg-white flex items-center justify-center h-[90px] sticky top-0 left-0 z-50 shadow-lg'>
 
             <div className="lg:container mx-auto">
                 <div className="flex items-center justify-between md:gap-10 gap-6">
