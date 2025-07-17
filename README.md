@@ -18,7 +18,7 @@
 
 ### 🏠 Homepage
 
-![Homepage](/home_page.png)
+![Homepage](public/home_page.png)
 
 ### 🛍️ Product Listing
 
@@ -55,7 +55,7 @@ To run this project locally, follow the steps below:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/iceTales.git
+git clone https://github.com/lifeonthecode/Ice-Tales
 cd iceTales
 2. Install Dependencies
 
