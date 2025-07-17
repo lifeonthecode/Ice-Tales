@@ -14,7 +14,6 @@ const Footer = () => {
     const scrollToTopWithDuration = (duration) => {
         const start = window.scrollY;
         const startTime = performance.now();
-
         const animateScroll = (currentTime) => {
             const elapsed = currentTime - startTime;
             const progress = Math.min(elapsed / duration, 1 );
@@ -28,7 +27,6 @@ const Footer = () => {
             }
             
         };
-
         requestAnimationFrame(animateScroll);
     }
 
