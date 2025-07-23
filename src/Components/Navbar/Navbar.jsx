@@ -9,7 +9,7 @@ import { GoArrowRight } from 'react-icons/go';
 const navLinks = [
     { id: 1, title: 'Home', path: '/' },
     { id: 2, title: 'About Us', path: '/about' },
-    { id: 3, title: 'Pages', path: '/pages' },
+    { id: 3, title: 'Pages' },
     { id: 4, title: 'Blog', path: '/blog' },
     { id: 5, title: "Faq's", path: '/faqs' },
 ]
@@ -37,30 +37,50 @@ const Navbar = () => {
                         <nav className='flex items-center gap-10'>
 
                             {
-                                navLinks.map((link) => (
-                                    
-                                    <NavLink
-                                    onClick={() => {
-                                    link?.id === 3 ? setActiveLink(!activeLink) : setActiveLink(!activeLink)
-                                    }}
-                                        key={link.id}
-                                        to={link?.path || '#'}
-                                        className={({ isActive }) => isActive ? 'text-base font-archivo font-semibold text-[#f83d8e] capitalize flex items-center gap-1' : 'text-base font-archivo font-semibold text-[#0f0200] capitalize flex items-center gap-1'}
+                                navLinks?.map((link, index) => {
+                                    if (index === 2) {
+                                        return (
+                                            <div className="dropdown" onClick={() => {
+                                                    setActiveLink(!activeLink)
+                                                }}>
 
-                                    >
-                                        {link.title} 
+                                                <button 
+                                                
+                                                className={`text-base font-archivo font-semibold  capitalize flex items-center gap-1 cursor-pointer ${activeLink ? 'text-[#f83d8e]' : 'text-[#0f0200]'}`}
 
-                                        {
-                                            link?.id == 3 && (
-                                                <span>
-                                                    {
-                                                        activeLink ? <MdArrowDropUp size={'1.8rem'} /> : <MdArrowDropDown size={'1.8rem'} />
-                                                    }
-                                                </span>
-                                            )
-                                        }
-                                    </NavLink>
-                                ))
+                                                tabIndex={0} role="button">
+                                                    Pages
+                                                    <span>
+                                                        {
+                                                            activeLink ? <MdArrowDropUp size={'1.8rem'} /> : <MdArrowDropDown size={'1.8rem'} />
+                                                        }
+                                                    </span>
+                                                </button>
+
+
+                                                <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                                                    <li><Link to={'/team'} className='text-base text-[#0f0200] font-archivo font-normal capitalize'>Team</Link></li>
+
+                                                    <li><Link to={'/review'} className='text-base text-[#0f0200] font-archivo font-normal capitalize'>Review</Link></li>
+
+                                                    <li><Link to={'/shop'} className='text-base text-[#0f0200] font-archivo font-normal capitalize'>Shop</Link></li>
+                                                </ul>
+                                            </div>
+                                        )
+                                    }
+
+                                    return (
+                                        <NavLink
+
+                                            key={link.id}
+                                            to={link?.path}
+                                            className={({ isActive }) => isActive ? 'text-base font-archivo font-semibold text-[#f83d8e] capitalize flex items-center gap-1' : 'text-base font-archivo font-semibold text-[#0f0200] capitalize flex items-center gap-1'}
+
+                                        >
+                                            {link.title}
+                                        </NavLink>
+                                    )
+                                })
                             }
 
                         </nav>
@@ -68,7 +88,7 @@ const Navbar = () => {
                         <div className='flex items-center md:gap-10 gap-6'>
                             <button onClick={() => setActiveSearch(true)} className='bg-none border-none cursor-pointer'><CiSearch color='#0f0200' size={'1.9rem'} /></button>
                             <Link to={'/cart'} className='relative'><BsCart color='#0f0200' size={'2rem'} />
-                            <span className='absolute -bottom-[5px] -right-[5px] w-[18px] h-[18px] rounded-full bg-[#683292] text-sm font-archivo font-normal text-white flex items-center justify-center'>0</span></Link>
+                                <span className='absolute -bottom-[5px] -right-[5px] w-[18px] h-[18px] rounded-full bg-[#683292] text-sm font-archivo font-normal text-white flex items-center justify-center'>0</span></Link>
                             <Link to={'/contact'} className='px-6 py-4 rounded-2xl bg-[#f23d8e] text-base text-white font-archivo font-bold capitalize flex gap-3 items-center justify-center'>contact us <GoArrowRight color='white' size={'1.5rem'} /> </Link>
                         </div>
 
