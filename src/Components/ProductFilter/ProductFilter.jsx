@@ -147,7 +147,7 @@ const ProductFilter = () => {
 
             {/* featured products wrapper  */}
             <div className="flex flex-col gap-5 pb-12 mt-12">
-                <h3 className='text-2xl text-[#0f0200] font-berkshire-heading font-normal capitalize'>filter by price</h3>
+                <h3 className='text-2xl text-[#0f0200] font-berkshire-heading font-normal capitalize'>Featured Products</h3>
 
                 <div className="flex flex-col gap-4">
                     {
