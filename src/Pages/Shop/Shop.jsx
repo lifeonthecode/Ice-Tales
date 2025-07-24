@@ -59,11 +59,10 @@ const products = [
 
 const Shop = () => {
 
-    const [gridView, setGridView] = useState('3');
+    const [gridColumn, setGridColumn] = useState('grid-cols-3');
 
     return (
         <div>
-
             {/* broadcom component  */}
             <div className='mb-[130px]'>
                 <Broadcom page={'shop layout'} />
@@ -81,18 +80,18 @@ const Shop = () => {
                             {/* product header  */}
                             <div className='flex items-center justify-between gap-10'>
                                 <div className='flex items-center gap-6'>
-                                    <button onClick={() => setGridView('3')}
+                                    <button onClick={() => setGridColumn('grid-cols-3')}
 
-                                        className={`w-[44px] h-[44px] rounded-lg flex items-center justify-center  cursor-pointer border-none ${gridView === '3' ? 'bg-[#f83d8e]' : 'bg-[#f1f9f9]'} `}
+                                        className={`w-[44px] h-[44px] rounded-lg flex items-center justify-center  cursor-pointer border-none ${gridColumn === 'grid-cols-3' ? 'bg-[#f83d8e]' : 'bg-[#f1f9f9]'} `}
                                     >
 
 
-                                        <RiLayoutGrid2Fill size={'1.5rem'} color={gridView === '3' ? 'white' : 'black'} />
+                                        <RiLayoutGrid2Fill size={'1.5rem'} color={gridColumn === 'grid-cols-3' ? 'white' : 'black'} />
                                     </button>
 
-                                    <button onClick={() => setGridView('1')}
-                                        className={`w-[44px] h-[44px] rounded-lg flex items-center justify-center  cursor-pointer border-none ${gridView === '1' ? 'bg-[#f83d8e]' : 'bg-[#f1f9f9]'} `}>
-                                        <RiTableView size={'1.5rem'} color={gridView === '1' ? 'white' : 'black'} />
+                                    <button onClick={() => setGridColumn('grid-cols-1')}
+                                        className={`w-[44px] h-[44px] rounded-lg flex items-center justify-center  cursor-pointer border-none ${gridColumn === 'grid-cols-1' ? 'bg-[#f83d8e]' : 'bg-[#f1f9f9]'} `}>
+                                        <RiTableView size={'1.5rem'} color={gridColumn === 'grid-cols-1' ? 'white' : 'black'} />
                                     </button>
                                 </div>
 
@@ -110,10 +109,10 @@ const Shop = () => {
                             
 
                             {/* products  */}
-                            <div className={`grid grid-cols-${gridView} gap-6`}>
+                            <div className={`grid ${gridColumn} gap-6`}>
                                 {
                                     products?.map((product, index) => (
-                                        <ProductCard card={product} key={index} gridView={gridView} />
+                                        <ProductCard card={product} key={index} gridColumn={gridColumn} />
                                     ))
                                 }
                             </div>
