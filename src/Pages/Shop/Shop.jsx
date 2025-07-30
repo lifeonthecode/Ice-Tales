@@ -106,7 +106,6 @@ const Shop = () => {
                                 </div>
                             </div>
 
-                            
 
                             {/* products  */}
                             <div className={`grid ${gridColumn} gap-6`}>

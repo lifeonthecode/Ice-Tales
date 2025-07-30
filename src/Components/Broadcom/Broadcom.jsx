@@ -29,7 +29,7 @@ const Broadcom = ({page}) => {
                                                 isLast ? (
                                                     <h3 className={` text-xl font-archivo font-normal capitalize flex items-center gap-2.5 ${isLast ? 'text-[#0f0200]' : 'text-[#f83de8]' }`}><span>/</span> {item}</h3>
                                                 ) : (  
-                                                    <Link to={routeTo} className='text-[#f83de8] text-xl font-archivo font-normal capitalize'>{item}</Link>
+                                                    <Link to={routeTo} className='text-[#f83de8] text-xl font-archivo font-normal capitalize'><span>/</span> {item}</Link>
                                                  )
 
                                             }
