@@ -191,7 +191,7 @@ const ProductDetailsCard = () => {
                 <div className='pt-[130px]'>
 
                     <div className="flex items-center justify-center gap-6 flex-col mb-16">
-                        <h3 className='text-5xl text-[#0f0200] font-berkshire-heading font-normal capitalize'>Related <span className='text-[#f83d8e]'>Products</span>  and updates</h3>
+                        <h3 className='text-5xl text-[#0f0200] font-berkshire-heading font-normal capitalize'>Related <span className='text-[#f83d8e]'>Products</span></h3>
                         <p className='text-xl text-[#646464] font-archivo font-normal'>Choose from some of related products</p>
                     </div>
 
