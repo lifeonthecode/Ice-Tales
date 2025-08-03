@@ -27,7 +27,7 @@ const OrderSummary = ({ cartItems }) => {
 
                 <div className='border-b border-[#e3e4e5] pb-4 space-y-3'>
                     <h4 className='text-base text-[#0f0200] font-archivo font-bold capitalize'>grand total <span className='text-[#f83d8e]'>${grandTotal}</span></h4>
-                    <Link to={'/checkout'} className='py-3 bg-[#f83d8e] rounded-3xl text-base text-white font-archivo font-bold capitalize flex items-center justify-center'>proceed checkout</Link>
+                    <Link to={'/cart/checkout'} className='py-3 bg-[#f83d8e] rounded-3xl text-base text-white font-archivo font-bold capitalize flex items-center justify-center'>proceed checkout</Link>
                 </div>
 
                 <div>
