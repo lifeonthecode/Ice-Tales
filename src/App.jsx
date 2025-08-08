@@ -7,6 +7,7 @@ import Shop from "./Pages/Shop/Shop"
 import ProductDetails from "./Pages/ProductDetails/ProductDetails"
 import ShoppingCart from "./Components/ShoppingCart/ShoppingCart"
 import Checkout from "./Pages/Checkout/Checkout"
+import Blog from "./Pages/Blog/Blog"
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/shop/product-details" element={<ProductDetails/>} />
           <Route path="/cart" element={<ShoppingCart/>} />
           <Route path="/cart/checkout" element={<Checkout/>} />
+          <Route path="/blog" element={<Blog/>} />
         </Routes>
 
         {/* Footer  */}
