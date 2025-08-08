@@ -59,10 +59,6 @@ const Navbar = () => {
 
 
                                                 <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                                                    <li><Link to={'/team'} className='text-base text-[#0f0200] font-archivo font-normal capitalize'>Team</Link></li>
-
-                                                    <li><Link to={'/review'} className='text-base text-[#0f0200] font-archivo font-normal capitalize'>Review</Link></li>
-
                                                     <li><Link to={'/shop'} className='text-base text-[#0f0200] font-archivo font-normal capitalize'>Shop</Link></li>
                                                 </ul>
                                             </div>

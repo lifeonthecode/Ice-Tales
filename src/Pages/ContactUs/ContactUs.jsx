@@ -26,19 +26,19 @@ const ContactUs = () => {
                     <div className="flex items-center justify-between gap-10">
                         {/* contact form left side wrapper  */}
                         <div className='flex flex-col gap-6'>
-                            <div className="flex items-center gap-6 px-6 py-6 bg-white shadow max-w-[450px] w-full rounded-lg">
-                                <div className='bg-[#683292] w-[40px] h-[40px] rounded-full flex items-center justify-center text-white text-2xl'>
+                            <div className="flex items-center gap-6 px-4 py-6 bg-white shadow max-w-[450px] w-full rounded-lg">
+                                <div className='bg-[#683292] w-[70px] h-[70px] rounded-full flex items-center justify-center text-white text-2xl'>
                                     <span><TfiWorld /></span>
                                 </div>
                                 <div className='flex flex-col gap-2.5'>
                                     <h4 className='text-xl text-[#0f0200] font-archivo font-semibold capitalize'>our location</h4>
-                                    <p className='text-base text-[#646464] font-archivo font-normal capitalize'>123 king Street, Melbourne victoria 3000 Australia</p>
+                                    <p className='text-base text-[#646464] font-archivo font-normal capitalize max-w-[150px]'>123 king Street, Melbourne victoria 3000 Australia</p>
                                 </div>
 
                             </div>
 
                             <div className="flex items-center gap-6 px-6 py-6 bg-white shadow max-w-[450px] w-full rounded-lg">
-                                <div className='bg-[#683292] w-[40px] h-[40px] rounded-full flex items-center justify-center text-white text-2xl'>
+                                <div className='bg-[#683292] w-[70px] h-[70px] rounded-full flex items-center justify-center text-white text-2xl'>
                                     <span><BsTelephoneOutbound /></span>
                                 </div>
                                 <div className='flex flex-col gap-1'>
@@ -51,7 +51,7 @@ const ContactUs = () => {
 
 
                             <div className="flex items-center gap-6 px-6 py-6 bg-white shadow max-w-[450px] w-full rounded-lg">
-                                <div className='bg-[#683292] w-[40px] h-[40px] rounded-full flex items-center justify-center text-white text-2xl'>
+                                <div className='bg-[#683292] w-[70px] h-[70px] rounded-full flex items-center justify-center text-white text-2xl'>
                                     <span><MdAttachEmail /></span>
                                 </div>
                                 <div className='flex flex-col gap-1'>

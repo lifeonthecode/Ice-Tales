@@ -10,6 +10,7 @@ import Checkout from "./Pages/Checkout/Checkout"
 import Blog from "./Pages/Blog/Blog"
 import Faq from "./Pages/Faq/Faq"
 import ContactUs from "./Pages/ContactUs/ContactUs"
+import NotFound from "./Pages/NotFound/NotFound"
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/blog" element={<Blog/>} />
           <Route path="/faqs" element={<Faq/>} />
           <Route path="/contact" element={<ContactUs/>} />
+          <Route path="*" element={<NotFound/>} />
         </Routes>
 
         {/* Footer  */}
